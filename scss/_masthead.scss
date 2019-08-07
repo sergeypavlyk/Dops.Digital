@@ -1,0 +1,51 @@
+// Styling for the masthead
+header.masthead {
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  iframe{
+    opacity: .9;
+    margin-top: 20px;
+  }
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+  }
+}

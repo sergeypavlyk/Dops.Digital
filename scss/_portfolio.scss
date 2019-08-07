@@ -1,0 +1,21 @@
+// Styling for the portfolio section
+#portfolio {
+  position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+  }
+}
